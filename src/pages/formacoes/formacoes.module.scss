@@ -1,0 +1,125 @@
+.main {
+    height: 84vh;
+    background-image: url(../../assets/fundoDesktop.png);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.fundo {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    height: 78vh;
+    border-radius: 20px;
+    overflow-y: scroll;
+}
+
+.formacoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    height: 75vh;
+    width: 90%;
+}
+
+.tituloFormacoes {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    p{
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .borda {
+        border: solid #EDD6ED;
+        border-radius: 20px;
+        width: 73%;
+    }
+}
+
+.descricao {
+    height: 75vh;
+
+}
+
+.titulos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.especificacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 15%;
+}
+
+.secao{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 80rem;
+}
+
+.curriculo {
+    width: 50%;
+    height: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 36%;
+
+    .borda{
+        border: solid #EDD6ED;
+        background-color: #EDD6ED;
+        height: 35vh;
+        width: 82%;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+    }
+}
+
+.curriculo2 {
+    width: 50%;
+    height: 75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 7.5%;
+
+    .borda{
+        border: solid #CCBDD6;
+        background-color: #CCBDD6;
+        height: 35vh;
+        width: 82%;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+    }
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    width: 82%;
+    justify-content: space-around;
+    height: 30vh;
+    
+}

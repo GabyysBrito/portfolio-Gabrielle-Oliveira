@@ -1,0 +1,23 @@
+.header {
+    background-color: #f351b8;
+}
+
+.nav {
+
+    ul{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 8vh;
+    }
+
+    .link {
+        cursor: pointer;
+        color: #000;
+    }
+
+    .link:hover {
+        color: #fff;
+        transition: color 0.9 ease;
+    }
+}
