@@ -1,18 +1,39 @@
+import { useState } from 'react'
 import s from './contato.module.scss'
 
 export default function Contato(){
     
-    const nome = document.getElementById("nome")
-    const email = document.getElementById("email")
-    const texto = document.getElementById("texto")
-    const [mensagem, setMensagem] = useState("")
+    const [nome,setNome] = useState("")
+    const [email,setEmail] = useState("")
+    const [texto,setTexto] = useState("")
     
-    function mensagem(){
+    const capturaNome = (e) => {
+        setNome(e.target.value)
+    }
+
+    const capturaEmail = (e) => {
+        setEmail(e.target.value)
+    } 
+
+    const capturaTexto = (e) => {
+        setTexto(e.target.value) 
+    }
+
+    const enviarDados = async() => {
+
+        const dadosPEnviar = {
+            nome,
+            email,
+            texto
+        }
+
+        await axios.post("https://formspree.io/f/xwpoyqov", dadosPEnviar)
+
         setMensagem("Mensagem enviada com sucesso")
 
-        nome("")
-        email("")
-        texto("")
+        setNome("")
+        setEmail("")
+        setTexto("")
 
         setTimeout(() => {
             setMensagem("")
@@ -33,12 +54,11 @@ export default function Contato(){
                         <section className= {s.bordaContatos}>
                             <p>Caso queira falar comigo, é só preencher este formulário.</p>
                             
-                            <form action="https://formspree.io/f/xwpoyqov" method="POST" accept-charset="UTF-8">
-                                <input className={s.texto} type="text" id='nome' placeholder='Nome' required/>
-                                <input className={s.texto} type="email" id='email' placeholder='Email' required/>
-                                <input className={s.mensagem} type="text" id='mensagem' placeholder='Mensagem' required/>
-                                <input type="hidden" name="_replyto" value=""></input>
-                                <input type="submit" value="Enviar" className={s.botao} onClick={mensagem} />
+                            <form onSubmit={(e) => e.preventDefault()} method="POST">
+                                <input className={s.texto} type="text" onChange={capturaNome} placeholder='Nome' required/>
+                                <input className={s.texto} type="email" onChange={capturaEmail} placeholder='Email' required/>
+                                <input className={s.mensagem} type="text" onChange={capturaTexto} placeholder='Mensagem' required/>
+                                <input type="submit" value="Enviar" className={s.botao} onClick={enviarDados} />
                             </form>
 
                             {mensagem && (
