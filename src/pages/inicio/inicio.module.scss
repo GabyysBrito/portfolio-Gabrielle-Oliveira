@@ -1,6 +1,8 @@
 .main {
     height: 84vh;
     background-image: url(../../assets/fundoDesktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -13,6 +15,10 @@
     align-items: center;
     width: 30%;
     height: 80vh;
+
+    img{
+        width: 80%;
+    }
     
     h1 {
         font-family: monospace;
@@ -71,5 +77,39 @@
     p {
         font-size: 20px;
         width: 75%;
+    }
+}
+
+@media (max-width:768px) {
+    .main{
+        flex-direction: column;
+        height: 43.9rem;
+
+        .perfil{
+            width: 100%;
+
+            img{
+                width: 60%;
+            }
+        }
+
+        .sobre{
+            width: 100%;
+            height: 50vh;
+            
+            h1{
+                text-align: center;
+            }
+            
+            h2{
+                font-size: 22px;
+            }
+
+            p{
+                font-weight: 500;
+                text-align: justify;
+                width: 98%;
+            }
+        }
     }
 }

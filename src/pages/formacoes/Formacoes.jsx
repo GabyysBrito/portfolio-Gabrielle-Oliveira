@@ -81,51 +81,51 @@ export default function Formacoes(){
                         <p>Formações</p>
                         <div className={s.borda}></div>
                     </section>
-
-                    <section className= {s.descricao}>
                         
+                    <section className={s.descricaoFormacoes}>
+
                         <section className= {s.titulos}>
                             <section className={s.especificacao}>
-                                <img src={iconeChapeu} alt="" />
-                                <p>Educação</p>
+                            <img src={iconeChapeu} alt="Imagem de um chapéu de formatura" />
+                            <p>Educação</p>
                             </section>
+                        </section>
+                    
+                        <section className={s.secaoFormacoes}>
+                            { educacao.map((item) => (
+                            
+                                <section className={s.borda}>
+                                    <section className={s.texto}>
+                                        <p>{item.ano}</p>
+                                        <p>{item.curso}</p>
+                                        <p>{item.instituicao}</p>
+                                    </section>
+                                </section>
+                            ))}
+                        </section>
+                    </section>
 
+                    
+                    <section className={s.descricaoFormacoes2}>
+
+                        <section className= {s.titulos}>
                             <section className={s.especificacao}>
-                                <img src={iconeCertificacao} alt="" />
-                                <p>Certificações</p>
+                            <img src={iconeCertificacao} alt="Imagem de um papel como certificado com um laço" />
+                            <p>Certificações</p>
                             </section>
                         </section>
 
-
-                        <section className={s.secao}>
-                            <section className={s.curriculo}>
-                            
-                                    { educacao.map((item) => (
-                                        
-                                        <section className={s.borda}>
-
-                                            <section className={s.texto}>
-                                                <p>{item.ano}</p>
-                                                <p>{item.curso}</p>
-                                                <p>{item.instituicao}</p>
-                                            </section>
-                            
-                                        </section>
-
-                                    ))}
-                            </section>
-                            <section className={s.curriculo2}>
-                                { certificacao.map((item) => (
-                                    <section className={s.borda}>
-                                        <section className={s.texto}>
-                                            <p>{item.ano}</p>
-                                            <p>{item.curso}</p>
-                                            <p>{item.instituicao}</p>
-                                            <a href={item.link} target='_blank'><img src={item.image} alt="" /></a>
-                                        </section>
+                        <section className={s.secaoFormacoes2}>
+                            { certificacao.map((item) => (
+                                <section className={s.borda}>
+                                    <section className={s.texto}>
+                                        <p>{item.ano}</p>
+                                        <p>{item.curso}</p>
+                                        <p>{item.instituicao}</p>
+                                        <a href={item.link} target='_blank'><img src={item.image} alt="Imagem de um papel como certificado com um laço" /></a>
                                     </section>
-                                ))}
-                            </section>
+                                </section>
+                            ))}
                         </section>
                     </section>
                 

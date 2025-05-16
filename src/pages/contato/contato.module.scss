@@ -1,7 +1,8 @@
 .main {
     height: 84vh;
     background-image: url(../../assets/fundoDesktop.png);
-
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -85,11 +86,10 @@ form{
     .mensagem{
         border: solid 0.9px #970a8b;
         width: 61%;
-        height: 5vh;
+        height: 15vh;
         border-radius: 15px;
         padding-left: 5%;
-        padding-bottom: 18%;
-        
+        padding-top: 2%;
     }
 
 }
@@ -108,4 +108,30 @@ form{
 .botao:hover {
     transform: scale(1.1);
     cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .main{
+        .fundo{
+            width: 90%;
+        }
+
+        .bordaContatos{
+            width: 90%;
+
+            p{
+                width: 80%;
+            }
+        }
+
+        .mensagem{
+            width: 85%;
+            padding-top: 2%;
+        }
+
+        .botao{
+            height: 5vh;
+            width: 40%;
+        }
+    }
 }

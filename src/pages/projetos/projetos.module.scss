@@ -1,7 +1,8 @@
 .main {
     height: 84vh;
     background-image: url(../../assets/fundoDesktop.png);
-
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,7 +53,7 @@
 }
 
 .bordaProjetos {
-    border: solid #EDD6ED;
+    border: solid 0.9px rgb(134, 25, 111);
     background-color: #EDD6ED;
     display: flex;
     flex-direction: column;
@@ -79,4 +80,22 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+
+@media (max-width: 768px) {
+    .main{
+
+        .fundo{
+            width: 90%;
+        }
+
+        .descricaoProjetos{
+            flex-wrap: nowrap;
+            flex-direction: column;
+        }
+
+        .bordaProjetos{
+            width: 90%;
+        }
+    }
 }
