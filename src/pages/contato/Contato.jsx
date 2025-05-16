@@ -6,6 +6,7 @@ export default function Contato(){
     const [nome,setNome] = useState("")
     const [email,setEmail] = useState("")
     const [texto,setTexto] = useState("")
+    const [mensagem,setMensagem] = useState("")
     
     const capturaNome = (e) => {
         setNome(e.target.value)
@@ -54,7 +55,7 @@ export default function Contato(){
                         <section className= {s.bordaContatos}>
                             <p>Caso queira falar comigo, é só preencher este formulário.</p>
                             
-                            <form onSubmit={(e) => e.preventDefault()} method="POST">
+                            <form onSubmit={(e) => e.preventDefault()}>
                                 <input className={s.texto} type="text" onChange={capturaNome} placeholder='Nome' required/>
                                 <input className={s.texto} type="email" onChange={capturaEmail} placeholder='Email' required/>
                                 <input className={s.mensagem} type="text" onChange={capturaTexto} placeholder='Mensagem' required/>
