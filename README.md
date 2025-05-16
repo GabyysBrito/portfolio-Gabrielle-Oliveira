@@ -1,12 +1,24 @@
-# React + Vite
+# 💻 Portfólio - Gabrielle Oliveira
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é o repositório do meu portfólio pessoal desenvolvido para apresentar um pouco sobre mim e minha trajetória como desenvolvedora.
 
-Currently, two official plugins are available:
+## 🗂️ Estrutura do Site
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+O portfólio é dividido em seções principais:
 
-## Expanding the ESLint configuration
+### 🧑‍💼 Início
+Apresentação pessoal com um breve resumo sobre quem sou.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🎓 Formações
+Informações sobre minha escolaridade, cursos complementares e certificados que obtive ao longo da minha jornada.
+
+### 💼 Projetos
+Exibição dos principais projetos que desenvolvi, com links para os repositórios no GitHub e, quando disponíveis, os sites publicados.
+
+### 📬 Contato
+Formulário de contato para que visitantes possam enviar uma mensagem diretamente para o meu e-mail.
+
+---
+
+✅ Acesse o site publicado: [**Ver Portfólio Online**](https://portfolio-gabrielle-oliveira.vercel.app/)  
+📁 Código fonte disponível aqui neste repositório.
