@@ -33,7 +33,7 @@ export default function Contato(){
                         <section className= {s.bordaContatos}>
                             <p>Caso queira falar comigo, é só preencher este formulário.</p>
                             
-                            <form action="mailto:gaby.oliveira.brito1289@gmail.com" method="POST" enctype="text/plain">
+                            <form action="https://formspree.io/f/xwpoyqov" method="POST">
                                 <input className={s.texto} type="text" id='nome' placeholder='Nome' required/>
                                 <input className={s.texto} type="email" id='email' placeholder='Email' required/>
                                 <input className={s.mensagem} type="text" id='mensagem' placeholder='Mensagem' required/>
