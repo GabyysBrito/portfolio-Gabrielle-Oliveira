@@ -15,10 +15,25 @@
     height: 80vh;
     
     h1 {
+        font-family: monospace;
         font-size: 31px;
         color: #7d1186;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: escrever 4s steps(16) infinite, piscarCursor 0.7s infinite;
     }
+
+    @keyframes escrever {
+        from { width: 0ch; }
+            to { width: 20ch;}
+        }
+    
+    @keyframes piscarCursor {
+        50% { border-color: transparent; }
+    }
+
 }
+
 
 .sobre {
     display: flex;
@@ -31,14 +46,30 @@
     h1{
         font-size: 35px;
     }
+
+
     h2 {
         font-size: 25px;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: escreverNome 4s steps(30) infinite, piscarCursorNome 0.7s infinite;
 
         span{
             color: #7d1186;
         }
+
+        @keyframes escreverNome {
+        from { width: 0ch; }
+            to { width: 30ch;}
+        }
+    
+        @keyframes piscarCursorNome {
+        50% { border-color: transparent; }
+        }
     }
+
     p {
         font-size: 20px;
+        width: 75%;
     }
 }

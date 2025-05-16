@@ -1,0 +1,109 @@
+.main {
+    height: 84vh;
+    background-image: url(../../assets/fundoDesktop.png);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.fundo {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    height: 78vh;
+    border-radius: 20px;
+}
+
+.contatos{
+    height: 75vh;
+    width: 90%;
+}
+
+.tituloContatos{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 10vh;
+
+
+    p{
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .borda{
+        border: solid #EDD6ED;
+        border-radius: 20px;
+        width: 73%;
+    }
+}
+
+.descricaoContatos {
+    height: 64vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bordaContatos{
+    border: solid #EDD6ED;
+    background-color: #EDD6ED;
+    width: 45%;
+    height: 60vh;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    p{
+        text-align: center;
+        width: 70%;
+    }
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+    height: 48vh;
+
+    .texto{
+        border: solid 0.9px #970a8b;
+        height: 4vh;
+        border-radius: 30px;
+        padding-left: 5%;
+        
+    }
+
+    .mensagem{
+        border: solid 0.9px #970a8b;
+        width: 61%;
+        height: 5vh;
+        border-radius: 15px;
+        padding-left: 5%;
+        padding-bottom: 18%;
+    }
+}
+
+.botao{
+    border: none;
+    background-color: #be83be;
+    width: 30%;
+    height: 6vh;
+    border-radius: 20px;
+    font-weight: 600;
+    transition: transform 0.3s ease;
+    
+}
+
+.botao:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}

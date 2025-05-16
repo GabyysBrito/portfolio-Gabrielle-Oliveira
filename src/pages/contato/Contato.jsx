@@ -1,5 +1,49 @@
+import s from './contato.module.scss'
+
 export default function Contato(){
+    
+    const nome = document.getElementById("nome")
+    const email = document.getElementById("email")
+    const texto = document.getElementById("texto")
+
+    
+    function mensagem(){
+        setMensagem("Mensagem enviada com sucesso")
+
+        nome("")
+        email("")
+        texto("")
+
+        setTimeout(() => {
+            setMensagem("")
+        }, 3000)
+    }
+    
     return(
-        <h1>Olá sou contato</h1>
+        <section className= {s.main}>
+            <section className={s.fundo}>
+                <section className={s.contatos}>
+
+                    <section className={s.tituloContatos}>
+                        <p>Contatos</p>
+                        <div className={s.borda}></div>
+                    </section>
+
+                    <section className= {s.descricaoContatos}>
+                        <section className= {s.bordaContatos}>
+                            <p>Caso queira falar comigo, é só preencher este formulário.</p>
+                            
+                            <form action="mailto:gaby.oliveira.brito1289@gmail.com" method="POST" enctype="text/plain">
+                                <input className={s.texto} type="text" id='nome' placeholder='Nome' required/>
+                                <input className={s.texto} type="email" id='email' placeholder='Email' required/>
+                                <input className={s.mensagem} type="text" id='mensagem' placeholder='Mensagem' required/>
+                                <input type="submit" value="Enviar" className={s.botao} onClick={mensagem} />
+                            </form>
+                            
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </section>
     )
 }

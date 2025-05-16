@@ -12,7 +12,7 @@ export default function Inicio() {
             
             <section className={s.sobre}>
                 <h1>Olá!</h1>
-                <h2>Meu nome é <span>Gabrielle Oliveira</span></h2>
+                <h2>Meu nome é <span>Gabrielle Oliveira de Brito</span></h2>
                 <p>Sou  estudante de Análise e Desenvolvimento de Sistemas, em busca de me tornar Desenvolvedora Web. Estou no ínicio de carreira, mas com muita motivação para crescer e contribuir com projetos que façam a diferença. </p>
             </section>
         </main>
