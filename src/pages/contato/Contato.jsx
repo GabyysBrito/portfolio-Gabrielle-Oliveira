@@ -5,7 +5,7 @@ export default function Contato(){
     const nome = document.getElementById("nome")
     const email = document.getElementById("email")
     const texto = document.getElementById("texto")
-
+    const [mensagem, setMensagem] = useState("")
     
     function mensagem(){
         setMensagem("Mensagem enviada com sucesso")
@@ -39,6 +39,10 @@ export default function Contato(){
                                 <input className={s.mensagem} type="text" id='mensagem' placeholder='Mensagem' required/>
                                 <input type="submit" value="Enviar" className={s.botao} onClick={mensagem} />
                             </form>
+
+                            {mensagem && (
+                                <p className={s.mensagem}>{mensagem}</p>
+                            )}
                             
                         </section>
                     </section>
