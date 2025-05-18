@@ -80,13 +80,28 @@
     }
 }
 
+.rede{
+    display: flex;
+    justify-content: space-evenly;
+    justify-content: start;
+
+    a{
+        height: 1vh;
+    }
+
+    img {
+        width: 5vw;
+    }
+}
+
 @media (max-width:768px) {
     .main{
         flex-direction: column;
-        height: 43.9rem;
+        height: 44.1rem;
 
         .perfil{
             width: 100%;
+            height: 40vh;
 
             img{
                 width: 60%;
@@ -95,7 +110,7 @@
 
         .sobre{
             width: 100%;
-            height: 50vh;
+            height: 40vh;
             
             h1{
                 text-align: center;
@@ -109,6 +124,13 @@
                 font-weight: 500;
                 text-align: justify;
                 width: 98%;
+            }
+        }
+
+        .rede{
+            height: 7vh;
+            img {
+                width: 15vw;
             }
         }
     }

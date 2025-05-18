@@ -68,7 +68,7 @@ export default function Formacoes(){
             instituicao:"Centro Universitário Brasileiro - UNIBRA",
             image: iconeCertificacao,
             link:"https://drive.google.com/file/d/1QaUbPFoUvEewXCPxZzJH6-qwTvwFNnbo/view?usp=drive_link"
-        }
+        },
     ]
     
     return(
