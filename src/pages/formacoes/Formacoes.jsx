@@ -23,7 +23,7 @@ export default function Formacoes(){
         },
 
         {
-            ano:"2017-1019",
+            ano:"2017-2019",
             curso:"Ensino médio",
             instituicao:"Erem Santa Paula Frassinetti"
         }
@@ -87,7 +87,7 @@ export default function Formacoes(){
                         <section className= {s.titulos}>
                             <section className={s.especificacao}>
                             <img src={iconeChapeu} alt="Imagem de um chapéu de formatura" />
-                            <p>Educação</p>
+                            <p>Experiência Acadêmica</p>
                             </section>
                         </section>
                     
