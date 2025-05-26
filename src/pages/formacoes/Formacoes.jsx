@@ -56,25 +56,7 @@ export default function Formacoes(){
             image: iconeCertificacao,
             link:"https://drive.google.com/file/d/1BRF7_sCbGqDGNyY6dtin8z4sJTJRdB5e/view?usp=drive_link",
             seta: setaEsquerda
-        },
-
-        {
-            ano:"2023",
-            curso:"Certificacão em Introdução ao Python",
-            instituicao:"Centro Universitário Brasileiro - UNIBRA",
-            image: iconeCertificacao,
-            link:"https://drive.google.com/file/d/1SHjxWJLUt4m_sATrCdYa_IiilP5CkkMi/view?usp=drive_link",
-            seta: setaEsquerda
-        },
-
-        {
-            ano:"2022",
-            curso:"Certificacão em Gestão Ágil de projetos - SCRUM",
-            instituicao:"Centro Universitário Brasileiro - UNIBRA",
-            image: iconeCertificacao,
-            link:"https://drive.google.com/file/d/1QaUbPFoUvEewXCPxZzJH6-qwTvwFNnbo/view?usp=drive_link",
-            seta: setaEsquerda
-        },
+        }
     ]
     
     return(
