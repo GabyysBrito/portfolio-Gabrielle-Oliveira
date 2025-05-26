@@ -1,6 +1,7 @@
 import s from './formacoes.module.scss'
 import iconeChapeu from '../../assets/iconeChapeu.png'
 import iconeCertificacao from '../../assets/iconeCertificacao.png'
+import setaEsquerda from '../../assets/setaEsquerda.png'
 
 export default function Formacoes(){
     const educacao = [
@@ -35,7 +36,8 @@ export default function Formacoes(){
             curso:"Certificacão em Desenvolvimento Web Fullstack",
             instituicao:"Vai na Web",
             image: iconeCertificacao,
-            link:"https://drive.google.com/file/d/1pl1kENmFvJ1-378YwgD4W9rTPDLw2eYO/view?usp=drive_link"
+            link:"https://drive.google.com/file/d/1pl1kENmFvJ1-378YwgD4W9rTPDLw2eYO/view?usp=drive_link",
+            seta: setaEsquerda
         },
 
         {
@@ -43,7 +45,8 @@ export default function Formacoes(){
             curso:"Certificacão em Formação Profissionalizante",
             instituicao:"Instituto PROA",
             image: iconeCertificacao,
-            link:"https://drive.google.com/file/d/1fD6vSE-m9-S1mSwyGg0kSVcWOiC6JBFZ/view?usp=drive_link"
+            link:"https://drive.google.com/file/d/1fD6vSE-m9-S1mSwyGg0kSVcWOiC6JBFZ/view?usp=drive_link",
+            seta: setaEsquerda
         },
 
         {
@@ -51,7 +54,8 @@ export default function Formacoes(){
             curso:"Certificacão em Fundamentos de Machine Learning",
             instituicao:"Instituto PROA",
             image: iconeCertificacao,
-            link:"https://drive.google.com/file/d/1BRF7_sCbGqDGNyY6dtin8z4sJTJRdB5e/view?usp=drive_link"
+            link:"https://drive.google.com/file/d/1BRF7_sCbGqDGNyY6dtin8z4sJTJRdB5e/view?usp=drive_link",
+            seta: setaEsquerda
         },
 
         {
@@ -59,7 +63,8 @@ export default function Formacoes(){
             curso:"Certificacão em Introdução ao Python",
             instituicao:"Centro Universitário Brasileiro - UNIBRA",
             image: iconeCertificacao,
-            link:"https://drive.google.com/file/d/1SHjxWJLUt4m_sATrCdYa_IiilP5CkkMi/view?usp=drive_link"
+            link:"https://drive.google.com/file/d/1SHjxWJLUt4m_sATrCdYa_IiilP5CkkMi/view?usp=drive_link",
+            seta: setaEsquerda
         },
 
         {
@@ -67,7 +72,8 @@ export default function Formacoes(){
             curso:"Certificacão em Gestão Ágil de projetos - SCRUM",
             instituicao:"Centro Universitário Brasileiro - UNIBRA",
             image: iconeCertificacao,
-            link:"https://drive.google.com/file/d/1QaUbPFoUvEewXCPxZzJH6-qwTvwFNnbo/view?usp=drive_link"
+            link:"https://drive.google.com/file/d/1QaUbPFoUvEewXCPxZzJH6-qwTvwFNnbo/view?usp=drive_link",
+            seta: setaEsquerda
         },
     ]
     
@@ -122,7 +128,10 @@ export default function Formacoes(){
                                         <p>{item.ano}</p>
                                         <p>{item.curso}</p>
                                         <p>{item.instituicao}</p>
-                                        <a href={item.link} target='_blank'><img src={item.image} alt="Imagem de um papel como certificado com um laço" /></a>
+                                        <section className={s.icone}>
+                                            <a href={item.link} target='_blank'><img src={item.image} alt="Imagem de um papel como certificado com um laço" /></a>
+                                            <img className={s.seta} src={item.seta} alt="Icone se uma seta virada para a esquerda" />
+                                        </section>
                                     </section>
                                 </section>
                             ))}

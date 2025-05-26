@@ -135,3 +135,27 @@ form{
         }
     }
 }
+
+@media (min-width: 769px) and (max-width: 1023px) {
+    .main{
+        .fundo{
+            width: 90%;
+        }
+
+        .bordaContatos{
+            width: 70%;
+        }
+
+        .texto{
+            width: 60%;
+        }
+
+        .mensagem{
+            height: 13vh;
+        }
+
+        .botao{
+            height: 4vh;
+        }
+    }
+}

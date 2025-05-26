@@ -112,6 +112,18 @@
     
 }
 
+.icone{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 38%;
+
+    .seta{
+        
+        margin-bottom: 12%;
+    }
+}
+
 @media (max-width: 768px) {
 
     .main{
@@ -124,7 +136,7 @@
                     width: 100%;
 
                     .especificacao{
-                        width: 60%;
+                        width: 85%;
     
                         p{
                             font-size: 15px;
@@ -156,7 +168,38 @@
                     }
 
                 }
+
+                .icone{
+                    width: 55%;
+                }
             }
+        }
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+    .main{
+        .fundo{
+            width: 90%;
+        }
+
+        .especificacao{
+            width: 40%;
+        }
+
+        .secaoFormacoes{
+            height: 42vh;
+            .borda {
+                height: 20vh;
+            }
+
+        }
+
+        .secaoFormacoes2{
+            .borda {
+                height: 20vh;
+            }
+
         }
     }
 }
